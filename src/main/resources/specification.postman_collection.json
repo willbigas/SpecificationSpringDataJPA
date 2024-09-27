@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "debd9f48-f71c-46e2-a773-e8124f24488d",
+		"name": "specification",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8195190"
+	},
+	"item": [
+		{
+			"name": "specifications -- idade",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"maiorQueIdade\": 15\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/usuarios/specifications",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"specifications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "specifications  idade e status",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"status\": \"ATIVO\",\n  \"idadeMaiorQue\": 28\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/usuarios/specifications",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"specifications"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
